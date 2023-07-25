@@ -37,7 +37,7 @@ function contactUs({setSelectedPage}: Props) {
         >
         {/* header */}
             <motion.div
-                className="md:w-3/5"
+                className="md:w-3/5 mt-12 md:text-lg text:md"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 0.5}}
@@ -50,14 +50,17 @@ function contactUs({setSelectedPage}: Props) {
                 <Htext>
                     <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
                 </Htext>
-                <p className="my-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur necessitatibus totam velit vitae deleniti molestias eligendi atque quos eum deserunt. Vero quisquam temporibus accusamus praesentium vitae repellat quidem? Ab, delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eligendi similique nesciunt eveniet? Pariatur, perspiciatis. Beatae sint non quod nobis, mollitia itaque sit soluta officia deleniti similique incidunt a ab?
+                <p className="my-10">
+                    If it is a gym with a safe and comfortable environment that you area looking for, look no further! We got your back at Power Fitness. We cater for all levels of lifters from absolute beginners to elite national record holders!
+                </p>
+                <p>
+                    The first step towards your positive body transformation can start here with us at Power Fitness. What are you waiting for? A lasting habit starts with baby steps. Drop us a message below for any information or come visit us directly at our branch in Petaling Jaya and Puchong.
                 </p>
             </motion.div>
             {/* form and image */}
             <div className="mt-10 justify-between gap-8 md:flex">
                 <motion.div
-                    className="mt-10 basis-3/5 md:mt-0"
+                    className="mt-10 basis-2/5 md:mt-0"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
@@ -142,7 +145,7 @@ function contactUs({setSelectedPage}: Props) {
                         <img 
                             src={ContactUsPageGraphic} 
                             alt="contact-us" 
-                            className="w-3/4 md:ml-24"
+                            className="w-3/4 md:ml-24 mx-auto"
                         />
                     </div>
                 </motion.div>

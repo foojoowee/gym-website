@@ -1,8 +1,8 @@
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import ActionButton from "@/shared/ActionButton"
-import HomePageText from "@/assets/HomePageText.png"
-import HomePageGraphic from "@/assets/HomePageGraphic.png"
+import HomePageRack from "@/assets/HomePageRack.jpg"
+import SponsorMAP from "@/assets/SponsorMAP.jpg"
 import SponsorRedbull from "@/assets/SponsorRedBull.png"
 import SponsorForbes from "@/assets/SponsorForbes.png"
 import SponsorFortune from "@/assets/SponsorFortune.png"
@@ -43,12 +43,13 @@ function Home({setSelectedPage}: Props) {
                     >
                         <div className="relative">
                             <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
-                                <img src={HomePageText} alt="home-page-text" />
+                                <h1 className="basis-3/5 font-monserrat md:text-7xl text-5xl font-bold">POWER FITNESS</h1>
                             </div>
                         </div>
 
-                        <p className="mt-8 text-sm md:text-start">
-                            Unrivaled Gym, Unparalleled Training Fitness Center. World-class Studios to get the Body Shapes that you dream of. Get Your Dream Physique today!
+                        <p className="mt-8 text:md md:text-lg md:text-start">
+                            At Power Fitness we provide the best free-weight training environment, coupled with world class-lifters and equipment. Evolve with us today at Power Fitness!
+                            {/* Unrivaled Gym, Unparalleled Training Fitness Center. World-class Studios to get the Body Shapes that you dream of. Get Your Dream Physique today! */}
                         </p>
                     </motion.div>
                     {/* Actions */}
@@ -64,11 +65,11 @@ function Home({setSelectedPage}: Props) {
                         }}
                     >
                         <ActionButton setSelectedPage={setSelectedPage}>
-                            Join Now
+                            JOIN US
                         </ActionButton>
                         <AnchorLink 
-                            className="text-sm font-bold text-primary-500 underline hover:text-secondary-500" 
-                            onClick={() => setSelectedPage(SelectedPage.ContactUs)} href={`#${SelectedPage.ContactUs}`}
+                            className="text-lg font-bold text-primary-500 underline hover:text-secondary-500" 
+                            onClick={() => setSelectedPage(SelectedPage.Benefits)} href={`#${SelectedPage.Benefits}`}
                         >
                             <p>Learn More</p>
                         </AnchorLink>
@@ -76,18 +77,20 @@ function Home({setSelectedPage}: Props) {
                 </div>
 
                 {/* image */}
-                <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-                    <img src={HomePageGraphic} alt="home-pageGraphic" />
+                <div className="flex basis-3/5 justify-center mt-10 md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
+                    <img src={HomePageRack} alt="home-page-rack" className="rounded-xl md:min-w-[450px] object-contain" />
                 </div>
             </motion.div>
             {/* Sponsors */}
             {isAboveMediumScreens && (
                 <div className="h-[150px] w-full bg-primary-100 py-10">
                     <div className="mx-auto w-5/6">
-                        <div className="flex w-3/5 items-center justift-between gap-8">
+                        <div className="flex w-3/5 items-center justift-between gap-16">
                             <img src={SponsorRedbull} alt="redbull-sponsor"/>
+                            <img src={SponsorMAP} alt="fortunes-sponsor" className="h-16"/>
                             <img src={SponsorForbes} alt="forbes-sponsor"/>
                             <img src={SponsorFortune} alt="fortunes-sponsor"/>
+
                         </div>
                     </div>
                 </div>

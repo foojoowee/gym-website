@@ -1,12 +1,9 @@
 import { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
-import Logo from "@/assets/Logo.png"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import ActionButton from "@/shared/ActionButton"
-
-
 
 type Props = {
     selectedPage: SelectedPage;
@@ -27,11 +24,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
                     {/*Left */}
-                    <img src={Logo} alt="logo" />
+                    <div className="text-xl whitespace-nowrap font-bold bg-primary-300 px-5 rounded-lg">POWER FITNESS</div>
                     {/*Right */}
                     {isAboveMediumScreens ? (
                         <div className={`${flexBetween} w-full`}>
-                            <div className={`${flexBetween} gap-8 text-sm`}>
+                            <div className={`${flexBetween} gap-8 text-lg whitespace-nowrap`}>
                                 <Link 
                                     page="Home"
                                     selectedPage={selectedPage}
@@ -54,11 +51,11 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                                 />
                             </div>
                             <div className={`${flexBetween} gap-8`}>
-                                <p>Sign In</p>
+                                {/* <p className="hover:text-primary-300 cursor-pointer text-lg">SIGN IN</p> */}
                                 <ActionButton 
                                     setSelectedPage={setSelectedPage}
                                 >
-                                    Become a Member
+                                    JOIN US
                                 </ActionButton>
                             </div>
                         </div>

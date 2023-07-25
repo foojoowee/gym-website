@@ -1,28 +1,32 @@
-import Logo from "@/assets/Logo.png"
+import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid"
 
 const Footer = () => {
   return (
     <footer className="bg-primary-100 py-16">
-        <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
+        <div className="justify-between mx-auto w-5/6 gap-16 md:flex">
             <div className="mt-16 basis-1/2 md:mt-0">
-                <img src={Logo} alt="logo" />
+            <div className="text-xl whitespace-nowrap font-bold bg-primary-300 px-5 rounded-lg max-w-fit">POWER FITNESS</div>
                 <p className="my-5">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia atque placeat est nostrum neque laborum, expedita minus tempora dolor a commodi molestias soluta ipsam cum distinctio, eveniet ipsa sed repudiandae aut veniam alias nobis ratione veritatis.
+                    This is a mock-up website built as a personal project. This is not an actual site to register for gym services. The project is built using React and Typescript. Nonetheless, I advocate anyone reading this to get out and move more to live a healthier life.
                 </p>
                 <p>
-                    All Rights Reserved.
+                    2023 All Rights Reserved.
                 </p>
             </div>
             <div className="mt-16 basis-1/4 md:mt-0">
-                <h4 className="font-bold">Links</h4>
-                <p className="my-5">Lorem, ipsum dolor </p>
-                <p className="my-5">Lorem, ipsum dolor </p>
-                <p className="my-5">Lorem, ipsum dolor </p>
-            </div>
-            <div className="mt-16 basis-1/4 md:mt-0">
-                <h4 className="font-bold">Contact Us</h4>
-                <p className="my-5">eveniet ipsa sed repudiandae aut veniam alias nobis ratione veritatis. </p>
-                <p className="my-5">(333)425-851293</p>
+                <h4 className="font-bold">CONTACT US</h4>
+                <div className="flex my-3">
+                    <div><EnvelopeIcon className="mr-4 h-6 w-6 text-black"/></div>
+                    <p>foo.joowee@gmail.com</p>
+                </div>
+                <div className="flex my-3">
+                    <div><PhoneIcon className="mr-4 h-6 w-6 text-black"/></div>
+                    <p>+(6016)3070555</p>
+                </div>
+                <div className="flex my-3">
+                    <div><MapPinIcon className="mr-4 h-6 w-6 text-black"/></div>
+                    <p>2-26, Jalan SS 24/20, Taman Megah, 47301 Petaling Jaya, Selangor</p>
+                </div>
             </div>
         </div>
     </footer>

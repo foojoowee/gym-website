@@ -16,31 +16,32 @@ type Props = {
 const classes: Array<ClassType> = [
     {
         name: "Weight Training Classes",
-        description: "This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.",
+        description: "Lift weights the proper way - get your form checked today! To avoid possible injuries, it is important to know when form can be compensated and when it might be harzardous.",
         image: image1,
     },
     {
         name: "Yoga Classes",
+        description: "Let your mind and body become one. Test the limits of your body's flexibility and mobility with our experienced instructors",
         image: image2,
     },
     {
-        name: "Ab Core Classes",
-        description: "This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.",
+        name: "Pilates Classes",
+        description: "Test the limits of your core strength in our Pilates Class. Engage your core and muscles you never knew could be engaged.",
         image: image3,
     },
     {
-        name: "Adventure Classes",
-        description: "This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.",
+        name: "PowerLifting Classes",
+        description: "Further enhance your technique in Squat, Bench and Deadlift with our elite lifters who hold national records. There is never enough fine-tuning to perfect your lift technique!",
         image: image4,
     },
     {
-        name: "Fitness Training Classes",
-        description: "This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.",
+        name: "Calisthenics Classes",
+        description: "Join our group class performing calisthenics exercises. We have three different circuit sessions per week consisting of various bodyweight exercises!",
         image: image5,
     },
     {
-        name: "Training Classes",
-        description: "This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.",
+        name: "Boxing Classes",
+        description: "Train like Mike Tyson and Muhammad Ali! Except, do it with our strong and merciless coaches which have years of experience competing nationally and internationally.",
         image: image6,
     }
 ]
@@ -65,10 +66,10 @@ function OurClasses({setSelectedPage}: Props) {
                     visible: {opacity: 1, x: 0},
                 }}
             >
-                <div className="md:w-3/5">
+                <div className="md:w-3/5  md:text-lg text-md">
                     <Htext>Our Classes</Htext>
                     <p className="py-5">
-                        This is just text for developnment. This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.This is just text for developnment.
+                        Our facilities include group classes to cater for members who want to focus on flexibility, mobility and a more social aspect of working out. We offer Yoga, Pilates (both Math and Reformer), Calisthenics, Beginner Weight Lifting, Powerlifting and Boxing Classes.
                     </p>
                 </div>
             </motion.div>
